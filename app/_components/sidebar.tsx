@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,14 +6,17 @@ import Link from "next/link";
 export const Sidebar = () => {
     return (
         <aside className="h-full w-64 flex flex-col bg-sidebar rounded-4xl p-3 border-2 shadow-md">
-            <div className="flex items-center pb-3 justify-start space-x-1 border-b">
-                <Image
-                    src={'/sw.png'}
-                    alt="logo"
-                    height={25}
-                    width={25}
-                />
-                <p className="text-lg"> SW DASH </p>
+            <div className="flex items-center pb-3 justify-between space-x-1 border-b">
+                <div className="flex space-x-1">
+                    <Image
+                        src={'/sw.png'}
+                        alt="logo"
+                        height={25}
+                        width={25}
+                    />
+                    <p className="text-lg"> SW DASH </p>
+                </div>
+                <ModeToggle />
             </div>
             <div className="h-full flex flex-col mt-5 p-2 gap-y-2">
                 <Link href={'/admin'}>

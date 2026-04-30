@@ -120,6 +120,7 @@ html {
   --sidebar-accent-foreground: var(--primary);
   --sidebar-border: oklch(0.22 0.04 255);
   --sidebar-ring: var(--ring);
+  --radius: 0.5rem;
 }
 
 @layer base {
