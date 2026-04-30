@@ -8,7 +8,7 @@ Light mode<br/>
 Dark mode<br/>
 Claim certs directly from the queue (to steal others certs hehe)<br/>
 ## Tech stack
-next.js
-react
-tailwind css
+next.js<br/>
+react<br/>
+tailwind css<br/>
 ## made by @coolcream 
