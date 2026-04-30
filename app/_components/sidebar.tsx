@@ -1,5 +1,8 @@
+"use client";
+
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,13 +36,23 @@ export const Sidebar = () => {
                 </Link>
             </div>
             <div className="flex items-center pt-3 justify-start space-x-2 border-t">
-                <Image
-                    src={'/sw.png'}
-                    alt="logo"
-                    height={40}
-                    width={40}
-                />
-                <div className="flex flex-col">
+                <DropdownMenu>
+                    <DropdownMenuTrigger>
+                        <Image
+                            src={'/sw.png'}
+                            alt="logo"
+                            height={40}
+                            width={40}
+                            className="border-2 rounded-full"
+                        />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="animate-in">
+                        <Button variant={'ghost'} onClick={() => window.location.href = '/'} className="w-full">
+                            Logout
+                        </Button>
+                    </DropdownMenuContent>
+                </DropdownMenu>
+                <div className="flex flex-col" >
                     <h1 className="text-md font-medium">User3683</h1>
                     <h1 className="text-xs font-mono">Shipwright</h1>
                 </div>
