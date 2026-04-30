@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center w-screen h-screen space-y-4">
+    <div className="bg-background flex flex-col flex-1 items-center justify-center w-screen h-screen space-y-4">
       <Image
         src={'/sw.png'}
         alt="SW logo"
@@ -17,7 +17,7 @@ export default function Home() {
       </p>
       <Link href={'/admin'}>
         <Button className="px-24 py-5 text-xl">
-          Enter
+          Open
         </Button>
       </Link>
     </div>
