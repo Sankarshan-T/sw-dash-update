@@ -17,9 +17,10 @@ export default function Home() {
       </p>
       <Link href={'/admin'}>
         <Button className="px-24 py-5 text-xl">
-          Open
+          Login without an email
         </Button>
       </Link>
+      <p className="text-xs font-mono">Fan made ui for SW dash, made with love, coolcream 2026</p>
     </div>
   );
 }
